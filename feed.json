@@ -1,6 +1,8 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "NCU 小白",
+    "subtitle": "保持热爱，奔赴山海",
+    "icon": "https://ncufresher.github.io/images/favicon.ico",
     "description": "心之所向，素履以往",
     "home_page_url": "https://ncufresher.github.io",
     "items": [

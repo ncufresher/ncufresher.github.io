@@ -2,8 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ncufresher.github.io</id>
     <title>NCU 小白</title>
+    <subtitle>保持热爱，奔赴山海</subtitle>
+    <icon>https://ncufresher.github.io/images/favicon.ico</icon>
     <link href="https://ncufresher.github.io" />
+    <author>
+      <name>小白</name>
+    </author>
     <updated>2024-04-08T03:28:07.767Z</updated>
+    <category term="学习与开发笔记" />
     <entry>
         <id>https://ncufresher.github.io/2024/04/08/hello-world/</id>
         <title>Hello World</title>
