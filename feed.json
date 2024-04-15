@@ -1,9 +1,9 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "NCU 小白",
-    "subtitle": "保持热爱，奔赴山海",
+    "subtitle": "心之所向，素履以往",
     "icon": "https://ncufresher.github.io/images/favicon.ico",
-    "description": "心之所向，素履以往",
+    "description": "数据科学，大数据技术",
     "home_page_url": "https://ncufresher.github.io",
     "items": [
         {
