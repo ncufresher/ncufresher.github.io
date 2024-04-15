@@ -74,7 +74,7 @@
 &lt;p&gt;Hadoop 需要部署在 Linux 系统上，那这两者的文件系统有什么区别呢？&lt;/p&gt;
 &lt;h2 id=&#34;文件目录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件目录&#34;&gt;#&lt;/a&gt; 文件目录&lt;/h2&gt;
 &lt;p&gt;以下是 LInux 文件系统的文件目录：&lt;br /&gt;
-&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5Clinux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png&#34; alt=&#34;linux文件目录&#34; /&gt;&lt;/p&gt;
+&lt;img data-src=&#34;/images/linux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png&#34; alt=&#34;linux文件目录&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Linux 顶级目录为根目录 /。其它文件的含义见下：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -110,7 +110,7 @@
 &lt;/ul&gt;
 &lt;p&gt;其中常用的文件目录为前 6 个。&lt;/p&gt;
 &lt;p&gt;接下来看 Hadoop 目录：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5Chadoop%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.png&#34; alt=&#34;hadoop文件系统&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/hadoop%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.png&#34; alt=&#34;hadoop文件系统&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;bin：可执行文件，存放 hadoop 管理脚本指令，如 hadoop,hdfs。&lt;/p&gt;
@@ -141,7 +141,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我们再了解下 JDK 的文件目录：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5CJDK.png&#34; alt=&#34;JDK&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/JDK.png&#34; alt=&#34;JDK&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;bin: 可执行文件，如 javac,java&lt;/li&gt;
 &lt;li&gt;lib：库文件&lt;/li&gt;
