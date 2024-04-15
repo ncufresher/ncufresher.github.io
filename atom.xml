@@ -63,6 +63,130 @@
         <updated>2024-04-08T03:28:07.767Z</updated>
     </entry>
     <entry>
+        <id>https://ncufresher.github.io/2024/02/24/Linux%E5%92%8CHadoop%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</id>
+        <title>Linux文件系统与Hadoop文件系统</title>
+        <link rel="alternate" href="https://ncufresher.github.io/2024/02/24/Linux%E5%92%8CHadoop%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"/>
+        <content type="html">&lt;h1 id=&#34;linux文件系统与hadoop文件系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux文件系统与hadoop文件系统&#34;&gt;#&lt;/a&gt; Linux 文件系统与 Hadoop 文件系统&lt;/h1&gt;
+&lt;p&gt;Hadoop 需要部署在 Linux 系统上，那这两者的文件系统有什么区别呢？&lt;/p&gt;
+&lt;h2 id=&#34;文件目录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件目录&#34;&gt;#&lt;/a&gt; 文件目录&lt;/h2&gt;
+&lt;p&gt;以下是 LInux 文件系统的文件目录：&lt;br /&gt;
+&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5Clinux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png&#34; alt=&#34;linux文件目录&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Linux 顶级目录为根目录 /。其它文件的含义见下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;bin: 二进制文件，用于存储可执行文件，包含 linux 系统指令，如 cd,mkdir 等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lib: 存放库文件，Linux 库文件，如 python。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc: 配置文件，如环境变量配置文件 profile。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;home：用户空间，如 user1,user2。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;root：根用户目录，只有管理员才有权限进入。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;usr: 存放程序和文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dev: 设备文件目录，如网卡声卡。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;var: 存放系统经常变化的文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;temp：存放临时文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;proc: 虚拟目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中常用的文件目录为前 6 个。&lt;/p&gt;
+&lt;p&gt;接下来看 Hadoop 目录：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5Chadoop%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.png&#34; alt=&#34;hadoop文件系统&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;bin：可执行文件，存放 hadoop 管理脚本指令，如 hadoop,hdfs。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sbin：提供用户管理指令，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1zdGFydC15YXJuLWx2OHIuc2g=&#34;&gt;如 start-yarn.sh&lt;/span&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0b3AteWFybi5zaA==&#34;&gt;stop-yarn.sh&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;etc：配置文件，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1oYWRvb3AtZW52LWx2OHIuc2g=&#34;&gt;如 hadoop-env.sh&lt;/span&gt;，core-site.xml。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;share：各模块编译产生的 jar 包，如 hadoop-hdfs-nfs.jar。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lib：运行可能需要的库。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;linexec：各个服务的 shell 配置文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;logs：日志文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;include：一些可能需要的头文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;temp：临时文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们再了解下 JDK 的文件目录：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CDesktop%5C%E5%8D%9A%E5%AE%A2%5Cblog%5Csource%5Cimages%5CJDK.png&#34; alt=&#34;JDK&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bin: 可执行文件，如 javac,java&lt;/li&gt;
+&lt;li&gt;lib：库文件&lt;/li&gt;
+&lt;li&gt;jre：运行环境&lt;/li&gt;
+&lt;li&gt;db：关系数据库&lt;/li&gt;
+&lt;li&gt;include：头文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关于环境变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于环境变量&#34;&gt;#&lt;/a&gt; 关于环境变量&lt;/h2&gt;
+&lt;p&gt;环境变量的设置是为了方便系统再执行指令时能够找到指令（寻址）和找到依赖的库（支撑）。&lt;/p&gt;
+&lt;p&gt;所以设置环境变量一般要设置以下三个变量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HOME 变量：即框架或服务安装的目录，如 JAVA_HOME 和 HADOOP_HOME。&lt;/li&gt;
+&lt;li&gt;PATH 变量：告诉系统执行指令时寻找的路径，一般在 bin 目录，如&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;/&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo separator=&#34;true&#34;&gt;,&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;JAVA_HOME/bin,&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.09618em;&#34;&gt;J&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.08125em;&#34;&gt;H&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10903em;&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05764em;&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mpunct&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;HADOOP_HOME/bin。&lt;/li&gt;
+&lt;li&gt;CLASSPTHN 变量：类路径，系统程序支撑的库或依赖，一般在 lib 目录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用指令&#34;&gt;#&lt;/a&gt; 常用指令&lt;/h2&gt;
+&lt;p&gt;Linux 和 Hadoop 指令都有很多，但常用到的就那几种。就像几万汉字里日常也就用到几千。因此我们总结一些常用指令：&lt;/p&gt;
+&lt;h3 id=&#34;linux&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux&#34;&gt;#&lt;/a&gt; Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;查看路径：pwd&lt;/li&gt;
+&lt;li&gt;切换路径：cd&lt;/li&gt;
+&lt;li&gt;创建文件：touch/vim/cat&lt;/li&gt;
+&lt;li&gt;删除文件：rm&lt;/li&gt;
+&lt;li&gt;创建文件夹：mkdir&lt;/li&gt;
+&lt;li&gt;删除文件夹：rm -r&lt;/li&gt;
+&lt;li&gt;编辑文件：vi/vim/nano/gredit&lt;/li&gt;
+&lt;li&gt;解压和压缩：tar/bzip2/gzip&lt;/li&gt;
+&lt;li&gt;移动文件：mv&lt;/li&gt;
+&lt;li&gt;复制文件：cp&lt;/li&gt;
+&lt;li&gt;删除文件：rm&lt;/li&gt;
+&lt;li&gt;下载文件：apt-install&lt;/li&gt;
+&lt;li&gt;切换权限：sudo&lt;/li&gt;
+&lt;li&gt;切换用户：su&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hadoop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建文件夹：hadoop fs -mkdir&lt;/li&gt;
+&lt;li&gt;查看目录：hadoop fs -ls&lt;/li&gt;
+&lt;li&gt;移动 / 复制 / 删除：hadoop fs -mv/cp/rm&lt;/li&gt;
+&lt;li&gt;从本地上传文件：hadoop fs -put&lt;/li&gt;
+&lt;li&gt;下载文件到本地：hadoop fs -get&lt;/li&gt;
+&lt;li&gt;运行程序：hadoop jar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于 hadoop 自身分布式特性，因此不擅长文件创建与编辑。&lt;/p&gt;
+&lt;p&gt;实际需要 Linux 本地文件系统与 Hadoop 文件系统相互配合使用。&lt;/p&gt;
+</content>
+        <updated>2024-02-23T16:00:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://ncufresher.github.io/2020/12/24/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</id>
         <title>Markdown使用指南</title>
         <link rel="alternate" href="https://ncufresher.github.io/2020/12/24/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/"/>
