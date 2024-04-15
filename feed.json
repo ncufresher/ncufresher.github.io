@@ -7,11 +7,21 @@
     "home_page_url": "https://ncufresher.github.io",
     "items": [
         {
-            "id": "https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
-            "url": "https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
+            "id": "https://ncufresher.github.io/2024/04/15/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
+            "url": "https://ncufresher.github.io/2024/04/15/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
             "title": "两种开发架构",
             "date_published": "2024-04-14T16:00:00.000Z",
             "content_html": "<h1 id=\"开发架构\"><a class=\"anchor\" href=\"#开发架构\">#</a> 开发架构</h1>\n<p>在计算中所有的应用程序常常基于以下两种开发架构：</p>\n<ul>\n<li>\n<p>C/S 架构（Client-Server）：客户端 - 服务器架构，这里的客户端显著的特点是需要下载，即安装在本地的应用，当使用这些软件时，常常需要与后端服务器进行数据连接。</p>\n</li>\n<li>\n<p>B/S 架构（Brower-Server）：浏览器 - 服务器架构，像日常常见的 WEB 程序，网站等，都是通过浏览器与后端服务器连接。</p>\n</li>\n</ul>\n<p>C/S 架构由于将软件安装在本地，因此在访问和运行过程中会更加稳定，但如果软件太大是便会占用较多的本地空间，而 B/S 架构于是显得轻量，当然也可以通过云计算模式将将服务在云端进行。</p>\n<p>当从这两个基本开发框架出发去看其他应用开发的过程时，便就更加清楚每一步的作用。</p>\n<h1 id=\"举例\"><a class=\"anchor\" href=\"#举例\">#</a> 举例</h1>\n<p>在使用 Hexo+Github 搭建个人博客时，搜索到的大部分是教你每一步怎么做怎么做，只要无脑按部就班便就能完成了，但是为什么是这样？</p>\n<p><img data-src=\"C:%5CUsers%5C16897%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240415161759399.png\" alt=\"image-20240415161759399\" /></p>\n<p>而到搜索具体的搭建的原理时的资料却是少之又少，从 B/S 架构来理解便就清楚多了。</p>\n<p><img data-src=\"C:%5CUsers%5C16897%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240415162532381.png\" alt=\"image-20240415162532381\" /></p>\n<p>Hexo 是一个静态网页框架，而 Github 提供了一个文件托管平台的作用，git 工具可以帮助我们从本地管理 Github 仓库，于是我们在使用浏览器时访问的其实是 github 的文件仓库，然后在本地使用 hexo 工具进行网页的管理与博客内容的上传，最终在 github 得到内容的更新，于是不同的内容便展现在网页端。</p>\n",
+            "tags": [
+                "基础理解"
+            ]
+        },
+        {
+            "id": "https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
+            "url": "https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/",
+            "title": "两种开发架构",
+            "date_published": "2024-04-14T16:00:00.000Z",
+            "content_html": "<h1 id=\"开发架构\"><a class=\"anchor\" href=\"#开发架构\">#</a> 开发架构</h1>\n<p>在计算中所有的应用程序常常基于以下两种开发架构：</p>\n<ul>\n<li>\n<p>C/S 架构（Client-Server）：客户端 - 服务器架构，这里的客户端显著的特点是需要下载，即安装在本地的应用，当使用这些软件时，常常需要与后端服务器进行数据连接。</p>\n</li>\n<li>\n<p>B/S 架构（Brower-Server）：浏览器 - 服务器架构，像日常常见的 WEB 程序，网站等，都是通过浏览器与后端服务器连接。</p>\n</li>\n</ul>\n<p>C/S 架构由于将软件安装在本地，因此在访问和运行过程中会更加稳定，但如果软件太大是便会占用较多的本地空间，而 B/S 架构于是显得轻量，当然也可以通过云计算模式将将服务在云端进行。</p>\n<p>当从这两个基本开发框架出发去看其他应用开发的过程时，便就更加清楚每一步的作用。</p>\n<h1 id=\"举例\"><a class=\"anchor\" href=\"#举例\">#</a> 举例</h1>\n<p>在使用 Hexo+Github 搭建个人博客时，搜索到的大部分是教你每一步怎么做怎么做，只要无脑按部就班便就能完成了，但是为什么是这样？</p>\n<p><img data-src=\"/images/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%841.png\" alt=\"开发架构1\" /></p>\n<p>而到搜索具体的搭建的原理时的资料却是少之又少，从 B/S 架构来理解便就清楚多了。</p>\n<p><img data-src=\"/images/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%842.png\" alt=\"开发架构2\" /></p>\n<p>Hexo 是一个静态网页框架，而 Github 提供了一个文件托管平台的作用，git 工具可以帮助我们从本地管理 Github 仓库，于是我们在使用浏览器时访问的其实是 github 的文件仓库，然后在本地使用 hexo 工具进行网页的管理与博客内容的上传，最终在 github 得到内容的更新，于是不同的内容便展现在网页端。</p>\n",
             "tags": [
                 "基础理解"
             ]
