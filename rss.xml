@@ -10,9 +10,35 @@
         </author>
         <description>心之所向，素履以往</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 08 Apr 2024 11:28:07 +0800</pubDate>
-        <lastBuildDate>Mon, 08 Apr 2024 11:28:07 +0800</lastBuildDate>
+        <pubDate>Mon, 15 Apr 2024 00:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0800</lastBuildDate>
         <category term="学习与开发笔记" />
+        <item>
+            <guid isPermalink="true">https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/</guid>
+            <title>两种开发架构</title>
+            <link>https://ncufresher.github.io/2024/04/15/%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/20240415-%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84/</link>
+            <category term="基础理解" scheme="https://ncufresher.github.io/categories/%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A3/" />
+            <pubDate>Mon, 15 Apr 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;开发架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开发架构&#34;&gt;#&lt;/a&gt; 开发架构&lt;/h1&gt;
+&lt;p&gt;在计算中所有的应用程序常常基于以下两种开发架构：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;C/S 架构（Client-Server）：客户端 - 服务器架构，这里的客户端显著的特点是需要下载，即安装在本地的应用，当使用这些软件时，常常需要与后端服务器进行数据连接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B/S 架构（Brower-Server）：浏览器 - 服务器架构，像日常常见的 WEB 程序，网站等，都是通过浏览器与后端服务器连接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C/S 架构由于将软件安装在本地，因此在访问和运行过程中会更加稳定，但如果软件太大是便会占用较多的本地空间，而 B/S 架构于是显得轻量，当然也可以通过云计算模式将将服务在云端进行。&lt;/p&gt;
+&lt;p&gt;当从这两个基本开发框架出发去看其他应用开发的过程时，便就更加清楚每一步的作用。&lt;/p&gt;
+&lt;h1 id=&#34;举例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#举例&#34;&gt;#&lt;/a&gt; 举例&lt;/h1&gt;
+&lt;p&gt;在使用 Hexo+Github 搭建个人博客时，搜索到的大部分是教你每一步怎么做怎么做，只要无脑按部就班便就能完成了，但是为什么是这样？&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240415161759399.png&#34; alt=&#34;image-20240415161759399&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;而到搜索具体的搭建的原理时的资料却是少之又少，从 B/S 架构来理解便就清楚多了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C16897%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240415162532381.png&#34; alt=&#34;image-20240415162532381&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Hexo 是一个静态网页框架，而 Github 提供了一个文件托管平台的作用，git 工具可以帮助我们从本地管理 Github 仓库，于是我们在使用浏览器时访问的其实是 github 的文件仓库，然后在本地使用 hexo 工具进行网页的管理与博客内容的上传，最终在 github 得到内容的更新，于是不同的内容便展现在网页端。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://ncufresher.github.io/2024/04/08/hello-world/</guid>
             <title>Hello World</title>
